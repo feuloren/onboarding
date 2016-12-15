@@ -1,0 +1,6 @@
+alias dc="docker-compose"
+alias dcr="docker-compose run --rm"
+alias gill-shell="dc web ./manage.py nemo_shell"
+alias gill-dbshell="docker exec -it gill_db_1 psql nemopay"
+alias gill-testreset="dc -e GILL_DB_DATABASES='default=postgres://root:root@db/nemopay'  web python ./manage.py test --no-input --verbosity=2"
+alias gill-test="gill-testreset --settings=gill.settings_no_migrations -k"

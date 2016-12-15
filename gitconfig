@@ -1,0 +1,24 @@
+[user]
+    email = YOUR EMAIL ADDRESS
+    name = YOUR NAME
+
+[color]
+    ui = true
+
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    dc = diff --cached
+    lg = log -p
+    pr = pull --rebase
+    p = push
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    latest=for-each-ref --sort=-taggerdate --format='%(refname:short)' --count=1
+    undo = git reset --soft HEAD^
+
+[push]
+    default = upstream
